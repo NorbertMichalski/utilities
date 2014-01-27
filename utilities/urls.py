@@ -27,6 +27,7 @@ urlpatterns = patterns('',
     url(r'^supply/', include('supply.urls', namespace="supply")),
     url(r'^tracking/', include('tracking.urls', namespace="tracking")),
     url(r'^shipping/', include('shipping.urls', namespace="shipping")),
+    url(r'^freightsolution/', include('freightsolution.urls', namespace="freight")),
     url(r'^resale_cert/', include('resale_cert.urls', namespace="resale_cert")),
     url(r'^chat/', include('djangoChat.urls')),
     
