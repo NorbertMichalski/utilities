@@ -1,0 +1,153 @@
+.textBox {
+	height:30px;
+	width:45%;
+	min-width: 50px;
+	float:left;
+	margin-left: 25px;
+	
+}
+
+
+.container {
+	height:100%;
+	width:80%;
+	min-width: 300px;
+	min-height: 100px;
+	margin: 1% auto;
+}
+
+.inputForm {
+    height:60%;
+    width:27%;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 2% auto;
+    float: left;
+}
+
+.inputclass {
+    margin: 2% auto;
+    float: right;
+    text-align: right;
+}
+
+.textArea {
+    height:75%;
+    width:60%;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 1% auto;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    resize: none;
+    
+}
+
+
+.controls {
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 20%;
+    float:left;
+}
+
+.button_container {
+    width: 98%;
+    margin: 2%;
+    margin-right: 0;
+    min-width: 4.5em;
+    float: left;
+}
+
+
+.button {
+	margin: 0;
+	float: right;
+}
+
+.checkbox {
+	margin: 1%;
+	margin-right: 10px;
+	float: right;
+}
+
+.label_checkbox {
+    font-size: 1em;
+    float: right;
+}
+
+.radio {
+    margin: 1%;
+    margin-right: 5px;
+    float: right;
+}
+
+.label_radio {
+    font-size: 1em;
+    float: right;
+    
+}
+
+.label_input {
+    font-size: 1em;
+    float: left;
+    margin: 2.2%;
+    margin-right : 10px;
+}
+
+.subtitle {
+    margin-bottom: -25px;
+    float: left;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1em;
+    
+}
+
+#trackingNumbers {
+    margin-top: 26px;   
+}
+
+.instructions {
+    margin: 2% auto;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 45%;
+    width: 55%;
+    float: left;
+    color: #D64A2A;
+    
+}
+
+.inputsContainer {
+    width: 96%;
+    float: left;
+    border: 1px solid #CCCCCC;
+    padding: 2%;
+    
+}
+
+
+.resultTable {
+    width: 60%;
+    float: right;
+    margin-top: 4%;
+    
+    
+}
+
+.resultTable table {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+
+.resultTable table tr {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.resultTable table td {
+    padding: 0 5px;
+    
+}

@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'ShopMro administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block sidebar %}
+<div id="content-related" style="height:100%;">
+	<div class="module" id="chat" style="height:100%;">
+		<b>Chatty chat</b>
+		<iframe src="http://shopmro.com/utilities/chat" width="100%" height="100%" marginwidth="5"></iframe>
+	</div>
+</div>
+{% endblock %}

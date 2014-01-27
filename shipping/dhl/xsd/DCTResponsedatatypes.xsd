@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.dhl.com/DCTResponsedatatypes"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.dhl.com/DCTResponsedatatypes"
+	elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:element name="DCTResponseDataTypes">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="OrgnSvcAreaType">
+		<xs:sequence>
+			<xs:element name="FacilityCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ServiceAreaCode" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DestSvcAreaType">
+		<xs:sequence>
+			<xs:element name="FacilityCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ServiceAreaCode" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BkgDetailsType">
+		<xs:sequence>
+			<xs:element name="OriginServiceArea" minOccurs="1"
+				maxOccurs="1" type="OrgnSvcAreaType" />
+			<xs:element name="DestinationServiceArea" minOccurs="1"
+				maxOccurs="1" type="DestSvcAreaType" />
+			<xs:element name="QtdShp" minOccurs="0" maxOccurs="unbounded"
+				type="QtdShpType" />
+			<xs:element name="CalcNextDayInd" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SrvCombType">
+		<xs:sequence>
+			<xs:element name="GlobalServiceName" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="45" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GlobalServiceCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="6" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceTypeName" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="45" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeCodeType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+						<xs:enumeration value="FEE" />
+						<xs:enumeration value="SCH" />
+						<xs:enumeration value="XCH" />
+						<xs:enumeration value="NRI" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SOfferedCustAgreement" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SrvComb" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Prod" minOccurs="0" type="ProdType" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProdType">
+		<xs:sequence>
+			<xs:element name="VldSrvComb" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="SpecialServiceType"
+							type="xs:string" minOccurs="0" maxOccurs="1">
+						</xs:element>
+						<!-- xs:element name="VldMrkSrvComb" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="LocalChargeCode"
+										type="xs:string" minOccurs="0" maxOccurs="1">
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element -->
+						<xs:element name="LocalServiceType"
+										type="xs:string" minOccurs="0" maxOccurs="unbounded">
+									</xs:element>
+						<xs:element name="CombRSrv" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element
+										name="RestrictedSpecialServiceType" minOccurs="0"
+										type="xs:string" maxOccurs="1">
+									</xs:element>
+									<!-- xs:element name="CombRMrkSrv" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                        	<xs:sequence>
+                                        		<xs:element
+                                        			name="RestrictedLocalChargeCode"
+                                        			type="xs:string" minOccurs="0">
+                                        		</xs:element>
+                                        	</xs:sequence>
+                                        </xs:complexType>
+									</xs:element-->
+									<xs:element name="RestrictedLocalServiceType"
+                                        			type="xs:string" minOccurs="0" maxOccurs="unbounded"/>                                        		
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NoteType">
+		<xs:sequence>
+			<xs:element name="Condition" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ConditionCode" minOccurs="0">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"></xs:minLength>
+									<xs:maxLength value="10"></xs:maxLength>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="ConditionData" minOccurs="0">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="QtdShpExChrgType">
+		<xs:sequence>
+			<xs:element name="SpecialServiceType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalServiceType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GlobalServiceName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="LocalServiceTypeName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="SOfferedCustAgreement" type="xs:string"
+				minOccurs="0" maxOccurs="1" />
+			<xs:element name="ChargeCodeType" type="xs:string" minOccurs="0"></xs:element>
+			<xs:element name="InsPrmRateInPercentage" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="8"/>
+			          <xs:fractionDigits value="4"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeValue" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeTaxAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeTaxRate" minOccurs="0"
+				 maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="6"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- Added for Brazil DCT change -->
+ 			<xs:element name="ChargeTaxAmountDet" minOccurs="0" 
+ 			type="ChargeTaxAmountDetType" maxOccurs="unbounded"/>
+			 <xs:element name="QtdSExtrChrgInAdCur" minOccurs="0" 
+ 			type="QtdSExtrChrgInAdCurType" maxOccurs="unbounded"/>
+			<!-- Added for Brazil DCT change -->
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- Start:Added for Brazil DCT changes  -->
+			<xs:complexType name="WeightChargeTaxDetType">
+		<xs:sequence>
+			<xs:element name="TaxTypeRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="8"/>
+			          <xs:fractionDigits value="6"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TaxTypeCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					<xs:maxLength value="6"></xs:maxLength>
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>		
+			<xs:element name="WeightChargeTax" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+			<xs:element name="BaseAmt" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+		</xs:sequence>
+	</xs:complexType>
+	
+			<xs:complexType name="ChargeTaxAmountDetType">
+		<xs:sequence>
+			<xs:element name="TaxTypeRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="8"/>
+			          <xs:fractionDigits value="6"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TaxTypeCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					<xs:maxLength value="6"></xs:maxLength>
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>		
+			<xs:element name="TaxAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+			<xs:element name="BaseAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="QtdSInAdCurType">
+		<xs:sequence>
+			<xs:element name="CustomsValue" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExchangeRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="6"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyRoleTypeCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5" />
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>			
+			<xs:element name="WeightCharge" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TotalAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>			
+			<xs:element name="TotalTaxAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="WeightChargeTax" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>			
+			<xs:element name="WeightChargeTaxDet" minOccurs="0"
+				 type="WeightChargeTaxDetType" maxOccurs="unbounded"/> 
+		</xs:sequence>
+	</xs:complexType>
+	
+
+	<xs:complexType name="QtdSExtrChrgInAdCurType">
+		<xs:sequence>
+			<xs:element name="ChargeValue" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeExchangeRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="6"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ChargeTaxAmount" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>			
+			<xs:element name="CurrencyRoleTypeCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5" />
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		<xs:element name="ChargeTaxAmountDet" minOccurs="0"
+				 type="ChargeTaxAmountDetType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>	
+	
+	<!-- End:Added for Brazil DCT changes  -->
+	
+	<xs:complexType name="QtdShpType">
+		<xs:sequence>
+			<xs:element name="GlobalProductCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LocalProductCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="ProductShortName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="LocalProductName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="NetworkTypeCode" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="POfferedCustAgreement" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="TransInd" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+			<xs:element name="PickupDate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:date" />
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PickupCutoffTime" minOccurs="0">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>
+							Pickup Cut off Time
+						</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:duration"/>
+					
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BookingTime" minOccurs="0">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>
+							Booking Time
+						</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:duration"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CurrencyCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExchangeRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="6"/>
+       				</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="WeightCharge" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       				 </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="WeightChargeTax" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       			 	</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="weightChargeTaxRate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="6"/>
+			          <xs:fractionDigits value="3"/>
+       			 	</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TotalTransitDays" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:int"></xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PickupPostalLocAddDays" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:int"></xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryPostalLocAddDays"
+				minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:int"></xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PickupNonDHLCourierCode" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryNonDHLCourierCode"
+				minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryCheckpointReturn"
+				minOccurs="0">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>
+							Delivery Check point Return
+						</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:duration"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryDate" minOccurs="0">
+				<xs:simpleType>
+
+					<xs:restriction base="xs:date">
+
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryTime" minOccurs="0">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>
+							Delivery Time
+						</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:duration"/>
+						
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DeliveryTimeGMTOffset" minOccurs="0">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>
+							Delivery Time GMT Offset
+						</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DimensionalWeight" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="15"/>
+			          <xs:fractionDigits value="3"/>
+       			 	</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="WeightUnit" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PickupDayOfWeekNum" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DestinationDayOfWeekNum" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="QtdShpExChrg" minOccurs="0"
+				type="QtdShpExChrgType" maxOccurs="unbounded"/>
+            <xs:element name="PricingDate" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:date" />
+				</xs:simpleType>
+			</xs:element>
+            <xs:element name="ShippingCharge" minOccurs="0" >
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       			 	</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TotalTaxAmount" minOccurs="0" >
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+			          <xs:totalDigits value="18"/>
+			          <xs:fractionDigits value="3"/>
+       			 	</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- Added for Brazil DCT changes  -->
+			<xs:element name="QtdSInAdCur" minOccurs="0"
+				type="QtdSInAdCurType" maxOccurs="unbounded"/>
+			<xs:element name="WeightChargeTaxDet" minOccurs="0"
+				 type="WeightChargeTaxDetType" maxOccurs="unbounded"/>
+			<!-- Added for Brazil DCT changes  -->
+		</xs:sequence>
+	</xs:complexType>
+
+
+	
+	<xs:complexType name="MrkSrvType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="LocalProductCode" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+				<xs:element name="LocalServiceType" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+			</xs:choice>
+			<xs:choice>
+				<xs:element name="ProductShortName" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+				<xs:element name="GlobalServiceName" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+			</xs:choice>
+			<xs:choice>
+				<xs:element name="LocalProductName" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+				<xs:element name="LocalServiceTypeName" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+			</xs:choice>
+			<xs:choice>
+			<!-- Added for Brazil DCT change -->
+				<xs:element name="ProductDesc" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+				<xs:element name="ServiceDesc" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+			</xs:choice>			
+			<!-- Added for Brazil DCT change -->
+			<!-- xs:element name="Cd" type="xs:string" minOccurs="0"
+				maxOccurs="1">
+			</xs:element>
+			<xs:element name="GlobalServiceName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:element name="LocalServiceTypeName" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element-->
+			<xs:element name="NetworkTypeCode" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element>
+			<xs:choice>
+				<xs:element name="POfferedCustAgreement" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+				<xs:element name="SOfferedCustAgreement" type="xs:string" minOccurs="0"
+				maxOccurs="1"/>
+			</xs:choice>
+			<!-- xs:element name="OfferedCustAgreement" type="xs:string"
+				minOccurs="0" maxOccurs="1">
+			</xs:element-->
+			<xs:element name="TransInd" type="xs:string" minOccurs="0"
+				maxOccurs="1">
+			</xs:element>
+			<xs:element name="ChargeCodeType" type="xs:string"
+				minOccurs="0"  maxOccurs="unbounded">
+			</xs:element>
+			<!-- Added for Brazil DCT change -->
+			<xs:element name="MrkSrvInd" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1" />
+					</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<!-- Added for Brazil DCT change -->			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ProdNtwrkType">
+		<xs:sequence>
+			<xs:element name="NetworkTypeCode" minOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="SrvType">
+		<xs:sequence>
+			<xs:element name="GlobalProductCode" type="xs:string"
+				minOccurs="1" maxOccurs="1">
+			</xs:element>
+			<xs:element name="MrkSrv" type="MrkSrvType" minOccurs="0"
+				maxOccurs="unbounded">
+			</xs:element>
+			<xs:element name="SBTP" type="SBTPType" minOccurs="0" maxOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="SBTPType">
+		<xs:sequence>
+			<xs:element name="Prod" type="ProdType" minOccurs="0" maxOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,91 @@
+.textBox {
+	height:30px;
+	width:45%;
+	min-width: 50px;
+	float:left;
+	margin-left: 25px;
+	
+}
+
+
+.container {
+	height:100%;
+	width:80%;
+	min-width: 300px;
+	min-height: 100px;
+	margin: 1% auto;
+}
+
+.inputForm {
+    height:80%;
+    width:45%;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 2% auto;
+    float: left;
+}
+
+.textArea {
+    height:75%;
+    width:60%;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 1% auto;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    resize: none;
+    
+}
+
+
+.controls {
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 20%;
+    float:left;
+}
+
+.button_container {
+    width: 33%;
+    min-width: 4.5em;
+    float: left;
+}
+
+
+.button {
+	margin: 0;
+	float: right;
+}
+
+.radio {
+	margin: 0;
+}
+
+.label_radio {
+    font-size: 1em;
+}
+
+.subtitle {
+    margin-bottom: 0;
+    width: 80%;
+    float: right;
+    text-decoration: underline;
+    font-weight: 500;
+    
+}
+
+#trackingNumbers {
+    margin-top: 26px;   
+}
+
+.instructions {
+    margin: 2% auto;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 45%;
+    width: 55%;
+    float: left;
+    color: #D64A2A;
+    
+}
+

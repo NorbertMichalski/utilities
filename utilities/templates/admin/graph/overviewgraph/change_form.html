@@ -1,0 +1,27 @@
+{% extends "admin/change_form.html" %}
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+<!-- start: two new lines for highcharts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://shopmro.com/static/admin/highstock/js/highstock.js" type="text/javascript"></script>
+<script src="http://shopmro.com/static/admin/highstock/js/modules/exporting.js"></script>
+<!-- end: two new lines for highcharts -->
+{% endblock %}
+
+{% load i18n %}
+{% block content %}
+{{ block.super }}
+<script type="text/javascript">//<![CDATA[
+    (function($){
+        $('input[name="_save"]').hide();
+        $('input[name="_addanother"]').hide();
+        $('input[name="_continue"]').hide();
+        $('p[class="deletelink-box"]').hide();
+        $('<input type="submit" value="{% trans 'Next Chart' %}" name="_viewnext" />')
+        .prependTo('div.submit-row');
+        $('<input type="submit" value="{% trans 'Back to main' %}" name="_save" />')
+        .prependTo('div.submit-row');
+    })(django.jQuery);
+//]]></script>
+{% endblock %}

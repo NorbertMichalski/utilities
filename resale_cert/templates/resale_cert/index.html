@@ -1,0 +1,65 @@
+<head>
+	<title>Resellers Check</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}resale_cert/style.css">
+	
+</head>
+<script>
+	function clearBox(){
+		document.getElementById("permit_number").value = '';
+	}
+
+	
+	function isNumber(n) {
+	  return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+	
+	function validateForm(){
+		var permit_number=document.forms["resaleForm"]["permit_number"].value;
+		if (!isNumber(permit_number)) {
+			alert('Enter the numeric portion only. Omit letters and other symbols (e.g. dashes.)');
+			return false;
+		}
+		
+	}
+	
+	
+		
+	
+	
+</script>
+
+<body onload="inputDate()">
+<div class="container">
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<form action="{% url 'resale_cert:index' %}" method="post" class="inputForm" name="resaleForm" onsubmit="return validateForm();" >
+	{% csrf_token %}
+	<h4 class="subtitle">Resale Cert:</h4>
+	<div class="button_container">
+	<input type="button" class="button" value="Clear" title="Clear the contents of the input box." onclick="clearBox()"/>
+	</div>
+	<div class="inputsContainer">
+	<label class="label_input">Permit Number:</label>
+	<input class="inputclass" name="permit_number" id="permit_number" value="{{permit_number}}" title="Enter the numeric portion only. Omit letters and other symbols (e.g. dashes.)"/>
+	</div>
+	<div class="button_container">
+	<input type="submit" class="button" value="Search" title="Search the selected supplier." />
+	</div>
+</form>
+
+<div class="resultTable">
+	{% if status %}
+	{% if status == "Valid" %}
+		<h4 class="green">{{ status|safe }}</h4>
+	{% else %}
+		<h4 class="red">{{ status|safe }}</h4>
+	{% endif %}
+	{% if status %}
+	<label>Owner:</label>
+	<span>{{owner|safe}}</span>
+	{% endif %}
+	{% endif %}
+</div>
+</div>
+</body>

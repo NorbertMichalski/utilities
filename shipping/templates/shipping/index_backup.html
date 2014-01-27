@@ -1,0 +1,196 @@
+<head>
+	<title>Shipping Cost Calculator</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}shipping/style.css">
+	
+</head>
+<script>
+	function message(message){
+		document.getElementById('message').innerHTML = message;
+	}
+	
+	function clearBox(){
+		document.getElementById("zipcode1").value = '';
+		document.getElementById("zipcode2").value = '';
+		document.getElementById("weight").value = '';
+	}
+	
+	function focusInBox(){
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+		if(dd<10){dd='0'+dd} {if(mm<10){mm='0'+mm} today = mm+'/'+dd+'/'+yyyy;}
+		var box = document.getElementById("date1");
+		if (box.value==today) {
+			box.value = '';
+		}
+	}
+
+	function focusOutBox(){
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+		if(dd<10){dd='0'+dd} {if(mm<10){mm='0'+mm} today = mm+'/'+dd+'/'+yyyy;}
+		var box = document.getElementById("date1");
+		if (box.value=="") {
+			box.value = today;
+		}
+	}
+		
+	function warrehouse(obj) {
+     if(obj.checked) {
+         document.getElementById("zipcode1").value = '90023'
+     }
+     else {
+     	document.getElementById("zipcode1").value = ''
+     }
+	}
+	
+	function inputDate(){
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		
+		var yyyy = today.getFullYear();
+		if(dd<10){dd='0'+dd} {if(mm<10){mm='0'+mm} today = mm+'/'+dd+'/'+yyyy;}
+		document.getElementById("date1").value = today;
+	}
+	
+	function isNumber(n) {
+	  return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+	
+	function validateForm(){
+		var zipcode1=document.forms["shippingForm"]["zipcode1"].value;
+		var zipcode2=document.forms["shippingForm"]["zipcode2"].value;
+		var weight=document.forms["shippingForm"]["weight"].value;
+		var date1=document.forms["shippingForm"]["date1"].value;
+		var radios = document.getElementsByName('carrier');
+
+                for (var i = 0, length = radios.length; i < length; i++) {
+                  if (radios[i].checked) {
+                      company = radios[i].value;
+                      break;
+                      }
+                }
+
+		if (!isValidDate(date1)) {
+			alert('Invalid date. Please enter a valid one.');
+			message('Invalid data. Please try again.')
+			return false;
+		};
+		if (!isValidZIP(zipcode1) || !isValidZIP(zipcode1)){
+			alert('Invalid ZIP code. Please enter a valid one.');
+			message('Invalid data. Please try again.')
+			return false;
+		};
+		if (!isNumber(weight)) {
+			alert('Invalid weight. Please enter a valid one.');
+			message('Invalid data. Please try again.')
+			return false;
+		}
+                else if (company=='UPS' && parseFloat(weight)>150){
+                      alert('UPS ground only calculates <150 lbs');
+                      message('Invalid data. Please try again.')
+                      return false;
+                       };
+		
+	}
+	
+	function validateNumber(evt) {
+	  var theEvent = evt || window.event;
+	  var key = theEvent.keyCode || theEvent.which;
+	  key = String.fromCharCode( key );
+	  var regex = /[0-9]|\.\b/;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	}
+	
+	function validateDate(evt) {
+	  var theEvent = evt || window.event;
+	  var key = theEvent.keyCode || theEvent.which;
+	  key = String.fromCharCode( key );
+	  var regex = /[0-9]|[\b-\/]/;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	}
+	
+	function validateZip(evt) {
+	  var theEvent = evt || window.event;
+	  var key = theEvent.keyCode || theEvent.which;
+	  key = String.fromCharCode( key );
+	  var regex = /[0-9]|[-\b]/;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	}
+		
+	function isValidDate(date)	{
+	    var matches = /^(\d{2})[-\/](\d{2})[-\/](\d{4})$/.exec(date);
+	    if (matches == null) return false;
+	    var d = matches[2];
+	    var m = matches[1] - 1;
+	    var y = matches[3];
+	    var composedDate = new Date(y, m, d);
+	    return composedDate.getDate() == d &&
+	            composedDate.getMonth() == m &&
+	            composedDate.getFullYear() == y;
+	}
+		
+	function isValidZIP(zip) {
+	    var regex = /^\d{5}(-\d{4})?(?!-)$/;
+	    if (zip.match(regex)) return true;
+	    return false;
+		}
+	
+	
+</script>
+
+<body onload="inputDate()">
+<div class="container">
+<h4 id="message" class="instructions">{{info}}</h4>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<form action="{% url 'shipping:index' %}" method="post" class="inputForm" name="shippingForm" onsubmit="return validateForm();" >
+	{% csrf_token %}
+	<h4 class="subtitle">Shipping Calculator:</h4>
+	<div class="button_container">
+	<input type="button" class="button" value="Clear All" title="Clear the contents of the input box." onclick="clearBox()"/>
+	</div>
+	<div class="inputsContainer">
+	<label class="label_input">ZIP sender:</label>
+	<input class="inputclass" name="zipcode1" id="zipcode1" value="{{zipcode1}}" onkeypress='validateZip(event)' />
+	<div class="button_container">
+	<label class="label_checkbox">MRO warehouse</label>
+	<input class="checkbox" type="checkbox" value="our_warehouse" id="input_warehouse" onclick="warrehouse(this)" />
+	</div>
+	<label class="label_input">ZIP destination:</label>
+	<input class="inputclass" name="zipcode2" id="zipcode2" value="{{zipcode2}}" onkeypress='validateZip(event)' />
+	<label class="label_input">Weight (lbs):</label>
+	<input class="inputclass" name="weight" id="weight" value="{{weight}}" onkeypress='validateNumber(event)' />
+	<label class="label_input">Date departure:</label>
+	<input class="inputclass" name="date1" id="date1" value="{{date1}}" onkeypress='validateDate(event)'/>
+	<div class="button_container">
+	<label class="label_radio">IDC-USA</label>
+	<input type="radio" class="radio" value="IDC" name="carrier" id="IDC" />	
+	<label class="label_radio">UPS</label>
+	<input type="radio" class="radio" value="UPS" name="carrier" id="UPS" checked="checked" />
+	</div>
+	</div>
+	<div class="button_container">
+	<input type="submit" class="button" value="Search" title="Search the selected supplier." onclick="message('Working... Please wait a minute.')"/>
+	</div>
+</form>
+
+<div class="resultTable">
+	{{ results|safe }}
+</div>
+</div>
+</body>

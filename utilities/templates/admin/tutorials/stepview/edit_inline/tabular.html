@@ -1,0 +1,88 @@
+{% load i18n admin_static admin_modify %}
+<style>
+	.topic_container {
+		float:left;
+		border: 1px solid #ccc;
+		width:45%;
+		float:left;
+		margin: 1% 1.2%;
+		padding: 0 1%;
+		overflow: hidden;
+		
+	}
+	
+	.topic_caption {
+		margin-bottom: 1.5em;
+	}
+	
+	
+	.topic_caption span {
+		text-decoration: underline;
+		text-transform:capitalize;
+		font-weight: 700;
+		color: #333;
+		font-size: 1.3em;
+	}
+	
+	.topic_image {
+		margin-bottom: 2em;
+		border: 1px solid #777;
+		padding: 2px;
+		max-width: 750px;
+	}
+	
+	.topic_notes {
+		font-size: 1.2 em;
+		
+	}
+	
+	.topic_container hr {
+		border-color: #7CA0C7 !important;
+		color: #7CA0C7 !important;
+		background-color: #7CA0C7 !important;
+		height: 2px;
+		margin-bottom: 1%;
+		
+	}
+	
+</style>
+<div class="inline-group" id="{{ inline_admin_formset.formset.prefix }}-group">
+  <div class="tabular inline-related {% if forloop.last %}last-related{% endif %}">
+{{ inline_admin_formset.formset.management_form }}
+<fieldset class="module">
+   <h2>Steps</h2>
+   <div style="width:100%;">
+     {% for inline_admin_form in inline_admin_formset %}
+        <div class="topic_container">
+        {% with counter=forloop.counter %}
+        {% for fieldset in inline_admin_form %}
+          {% for line in fieldset %}
+            {% for field in line %}
+              {% if field.field.value != None %}
+              <div class="field_container">
+                  {% if field.field.name == 'image' %}
+                  	<img class="topic_image" src="{{ field.field.value }}">
+                  {% endif %}
+                  {% if field.field.name == 'image_url' %}
+                  	<img class="topic_image" src="{{ field.field.value }}">
+                  {% else %}
+                  	{% if field.field.name == 'caption' %}
+                  		<h5 class="topic_caption">Step {{counter}}: <span>{{ field.field.value | safe }}</span></h5>
+                  	{% else %}
+                  		<hr>
+                  		<p class="topic_notes">{{ field.field.value | safe }}</p>
+                  	{% endif %}	
+                  {% endif %}
+              </div>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+       </div>
+       {% endwith %}
+     {% endfor %}
+     </div>
+</fieldset>
+  </div>
+</div>
+

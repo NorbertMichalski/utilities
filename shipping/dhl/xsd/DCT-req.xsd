@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.dhl.com"  
+	xmlns:dhl="http://www.dhl.com/datatypes"  
+	xmlns="http://www.dhl.com" xmlns:dct="http://www.dhl.com/DCTRequestdatatypes"  
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="unqualified">
+	<xs:import namespace="http://www.dhl.com/datatypes"
+		schemaLocation="datatypes.xsd" />
+		<xs:import namespace="http://www.dhl.com/DCTRequestdatatypes"
+		schemaLocation="DCTRequestdatatypes.xsd" />
+	
+
+    <xs:element name="DCTRequest">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:choice minOccurs="1" maxOccurs="1">
+    				<xs:element name="GetQuote">
+						<xs:annotation>
+							<xs:documentation>Root element of Capability request
+							</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Request" type="dhl:Request" />
+								<xs:element name="From" type="dct:DCTFrom" minOccurs="1"  />
+								<xs:element name="BkgDetails" minOccurs="1"
+									type="dct:BkgDetailsType" />
+								<xs:element name="To" minOccurs="1" type="dct:DCTTo" />
+								<xs:element name="Dutiable" minOccurs="0" type="dct:DCTDutiable" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+    				<xs:element name="GetCapability">
+						<xs:annotation>
+							<xs:documentation>Root element of Capability request
+							</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Request" type="dhl:Request" />
+								<xs:element name="From" type="dct:DCTFrom" minOccurs="1"  />
+								<xs:element name="BkgDetails" minOccurs="1"
+									type="dct:BkgDetailsType" />
+								<xs:element name="To" minOccurs="1" type="dct:DCTTo" />
+								<xs:element name="Dutiable" minOccurs="0" type="dct:DCTDutiable" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+    			</xs:choice>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+</xs:schema>

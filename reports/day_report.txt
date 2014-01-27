@@ -1,0 +1,785 @@
+<br><br><p>Day report of 01/23/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>68</td><td>68</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>21</td><td>21</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>2</td><td>2</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>64</td><td>64</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>309</td><td>309</td><td>3</td><td>3</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>2803.47</td></tr><tr><td>Average day profit</td><td>2803.47</td></tr></tbody></table>
+<br><br><p>Day report of 01/22/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>187</td><td>187</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>59</td><td>59</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>15</td><td>15</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>201</td><td>201</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>800</td><td>800</td><td>21</td><td>21</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>8298.38</td></tr><tr><td>Average day profit</td><td>8298.38</td></tr></tbody></table>
+<br><br><p>Day report of 01/21/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>123</td><td>123</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>83</td><td>83</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>16</td><td>16</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>199</td><td>199</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>738</td><td>738</td><td>14</td><td>14</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>2678.49</td></tr><tr><td>Average day profit</td><td>2678.49</td></tr></tbody></table>
+<br><br><p>Day report of 01/20/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>115</td><td>115</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>57</td><td>57</td><td>2</td><td>2</td><td>Yes</td><td>0/1824</td><td>0</td></tr><tr><td>Redlion</td><td>5</td><td>5</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>184</td><td>184</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>608</td><td>608</td><td>15</td><td>15</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>2459.96</td></tr><tr><td>Average day profit</td><td>2459.96</td></tr></tbody></table>
+<br><br><p>Day report of 01/19/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>39</td><td>39</td><td>1</td><td>1</td><td>Yes</td><td>0/1774</td><td>0</td></tr><tr><td>Leeson</td><td>28</td><td>28</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>30</td><td>30</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>191</td><td>191</td><td>4</td><td>4</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>92.41</td></tr><tr><td>Average day profit</td><td>92.41</td></tr></tbody></table>
+<br><br><p>Day report of 01/18/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>50</td><td>50</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>21</td><td>21</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>1</td><td>1</td><td>0</td><td>0</td><td>Yes</td><td>2/1304</td><td>0</td></tr><tr><td>Dodge</td><td>35</td><td>35</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>198</td><td>198</td><td>5</td><td>5</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>858.9</td></tr><tr><td>Average day profit</td><td>858.90</td></tr></tbody></table>
+<br><br><p>Day report of 01/17/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>121</td><td>121</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>62</td><td>62</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>5</td><td>5</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>185</td><td>185</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>647</td><td>647</td><td>13</td><td>13</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>2135.4</td></tr><tr><td>Average day profit</td><td>2135.40</td></tr></tbody></table>
+<br><br><p>Day report of 01/16/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>173</td><td>173</td><td>7</td><td>7</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>88</td><td>88</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>24</td><td>24</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>182</td><td>182</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>815</td><td>815</td><td>23</td><td>23</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>11244.62</td></tr><tr><td>Average day profit</td><td>11244.62</td></tr></tbody></table>
+<br><br><p>Day report of 01/15/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>218</td><td>218</td><td>7</td><td>7</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>93</td><td>93</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>22</td><td>22</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>186</td><td>186</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>790</td><td>790</td><td>24</td><td>24</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>3188.29</td></tr><tr><td>Average day profit</td><td>3188.29</td></tr></tbody></table>
+<br><br><p>Day report of 01/14/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>236</td><td>236</td><td>8</td><td>8</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>84</td><td>84</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>215</td><td>215</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>842</td><td>842</td><td>22</td><td>22</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>7624.04</td></tr><tr><td>Average day profit</td><td>7624.04</td></tr></tbody></table>
+<br><br><p>Day report of 01/13/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>264</td><td>264</td><td>11</td><td>11</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Leeson</td><td>59</td><td>59</td><td>3</td><td>3</td><td>Yes</td><td>0/1873</td><td>0</td></tr><tr><td>Redlion</td><td>26</td><td>26</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>179</td><td>179</td><td>0</td><td>0</td><td>Yes</td><td>29/406</td><td>0</td></tr><tr><td>All brands</td><td>782</td><td>782</td><td>27</td><td>27</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>12444.33</td></tr><tr><td>Average day profit</td><td>12444.33</td></tr></tbody></table>
+<br><br><p>Day report of 01/12/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>46</td><td>46</td><td>1</td><td>1</td><td>Yes</td><td>0/1773</td><td>6</td></tr><tr><td>Leeson</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>3</td><td>3</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>39</td><td>39</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>209</td><td>209</td><td>3</td><td>3</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>193.88</td></tr><tr><td>Average day profit</td><td>193.88</td></tr></tbody></table>
+<br><br><p>Day report of 01/11/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>29</td><td>29</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>16</td><td>16</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>4</td><td>4</td><td>0</td><td>0</td><td>Yes</td><td>146/1413</td><td>5</td></tr><tr><td>Dodge</td><td>34</td><td>34</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>174</td><td>174</td><td>3</td><td>3</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>62.13</td></tr><tr><td>Average day profit</td><td>62.13</td></tr></tbody></table>
+<br><br><p>Day report of 01/10/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>167</td><td>167</td><td>7</td><td>7</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>87</td><td>87</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>9</td><td>9</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>154</td><td>154</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>684</td><td>684</td><td>14</td><td>14</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3284.44</td></tr><tr><td>Average day profit</td><td>3284.44</td></tr></tbody></table>
+<br><br><p>Day report of 01/09/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>184</td><td>184</td><td>4</td><td>4</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>78</td><td>78</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>16</td><td>16</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>187</td><td>187</td><td>4</td><td>4</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>843</td><td>843</td><td>26</td><td>26</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>6097.39</td></tr><tr><td>Average day profit</td><td>6097.39</td></tr></tbody></table>
+<br><br><p>Day report of 01/09/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>184</td><td>184</td><td>4</td><td>4</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>78</td><td>78</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>16</td><td>16</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>187</td><td>187</td><td>4</td><td>4</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>843</td><td>843</td><td>26</td><td>26</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>6097.39</td></tr><tr><td>Average day profit</td><td>6097.39</td></tr></tbody></table>
+<br><br><p>Day report of 01/08/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>106</td><td>106</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>42</td><td>42</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>9</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>116</td><td>116</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>487</td><td>487</td><td>11</td><td>11</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>2292.71</td></tr><tr><td>Average day profit</td><td>2292.71</td></tr></tbody></table>
+<br><br><p>Day report of 01/07/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>195</td><td>195</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>55</td><td>55</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>10</td><td>10</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>176</td><td>176</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>704</td><td>704</td><td>20</td><td>20</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>4915.37</td></tr><tr><td>Average day profit</td><td>4915.37</td></tr></tbody></table>
+<br><br><p>Day report of 01/06/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>129</td><td>129</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>54</td><td>54</td><td>0</td><td>0</td><td>Yes</td><td>0/1789</td><td>8</td></tr><tr><td>Redlion</td><td>19</td><td>19</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>119</td><td>119</td><td>0</td><td>0</td><td>Yes</td><td>4042/4552</td><td>8</td></tr><tr><td>All brands</td><td>588</td><td>588</td><td>13</td><td>13</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1986.67</td></tr><tr><td>Average day profit</td><td>1986.67</td></tr></tbody></table>
+<br><br><p>Day report of 01/06/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>129</td><td>129</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>54</td><td>54</td><td>0</td><td>0</td><td>Yes</td><td>0/1789</td><td>8</td></tr><tr><td>Redlion</td><td>19</td><td>19</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>119</td><td>119</td><td>0</td><td>0</td><td>Yes</td><td>4042/4552</td><td>8</td></tr><tr><td>All brands</td><td>588</td><td>588</td><td>13</td><td>13</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1986.67</td></tr><tr><td>Average day profit</td><td>1986.67</td></tr></tbody></table>
+<br><br><p>Day report of 01/05/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+           <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>129</td><td>129</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>54</td><td>54</td><td>0</td><td>0</td><td>Yes</td><td>0/1789</td><td>8</td></tr><tr><td>Redlion</td><td>19</td><td>19</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>119</td><td>119</td><td>0</td><td>0</td><td>Yes</td><td>4042/4552</td><td>8</td></tr><tr><td>All brands</td><td>588</td><td>588</td><td>13</td><td>13</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1986.67</td></tr><tr><td>Average day profit</td><td>1986.67</td></tr></tbody></table>
+<br><br><p>Day report of 01/05/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/1815</td><td>5</td></tr><tr><td>Leeson</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>1</td><td>1</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>4</td><td>4</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>16.98</td></tr><tr><td>Average day profit</td><td>16.98</td></tr></tbody></table>
+<br><br><p>Day report of 01/04/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>A              <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/1815</td><td>5</td></tr><tr><td>Leeson</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>1</td><td>1</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>4</td><td>4</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>16.98</td></tr><tr><td>Average day profit</td><td>16.98</td></tr></tbody></table>
+<br><br><p>Day report of 01/04/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>20</td><td>20</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>10</td><td>10</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>504/1198</td><td>4</td></tr><tr><td>Dodge</td><td>23</td><td>23</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>133</td><td>133</td><td>4</td><td>4</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>277.58</td></tr><tr><td>Average day profit</td><td>277.58</td></tr></tbody></table>
+<br><br><p>Day report of 01/03/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>134</td><td>134</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>58</td><td>58</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>17</td><td>17</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>117</td><td>117</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>614</td><td>614</td><td>9</td><td>9</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>2132.22</td></tr><tr><td>Average day profit</td><td>2132.22</td></tr></tbody></table>
+<br><br><p>Day report of 01/02/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>158</td><td>158</td><td>6</td><td>6</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>68</td><td>68</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>13</td><td>13</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>150</td><td>150</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>653</td><td>653</td><td>20</td><td>20</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3140.09</td></tr><tr><td>Average day profit</td><td>3140.09</td></tr></tbody></table>
+<br><br><p>Day report of 01/02/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>158</td><td>158</td><td>6</td><td>6</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>68</td><td>68</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>13</td><td>13</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>150</td><td>150</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>653</td><td>653</td><td>20</td><td>20</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3140.09</td></tr><tr><td>Average day profit</td><td>3140.09</td></tr></tbody></table>
+<br><br><p>Day report of 01/01/2014.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>24</td><td>24</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>1</td><td>1</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>13</td><td>13</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>93</td><td>93</td><td>4</td><td>4</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>199.38</td></tr><tr><td>Average day profit</td><td>199.38</td></tr></tbody></table>
+<br><br><p>Day report of 12/31/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>97</td><td>97</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>26</td><td>26</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>8</td><td>8</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>97</td><td>97</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>384</td><td>384</td><td>10</td><td>10</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>2622.53</td></tr><tr><td>Average day profit</td><td>2622.53</td></tr></tbody></table>
+<br><br><p>Day report of 12/31/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>97</td><td>97</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>26</td><td>26</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>8</td><td>8</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>97</td><td>97</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>384</td><td>384</td><td>10</td><td>10</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>2622.53</td></tr><tr><td>Average day profit</td><td>2622.53</td></tr></tbody></table>
+<br><br><p>Day report of 12/30/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>113</td><td>113</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>44</td><td>44</td><td>1</td><td>1</td><td>Yes</td><td>0/1704</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>183</td><td>183</td><td>4</td><td>4</td><td>Yes</td><td>1/5048</td><td>8</td></tr><tr><td>All brands</td><td>575</td><td>575</td><td>17</td><td>17</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3703.24</td></tr><tr><td>Average day profit</td><td>3703.24</td></tr></tbody></table>
+<br><br><p>Day report of 12/30/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>113</td><td>113</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>44</td><td>44</td><td>1</td><td>1</td><td>Yes</td><td>0/1704</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>183</td><td>183</td><td>4</td><td>4</td><td>Yes</td><td>1/5048</td><td>8</td></tr><tr><td>All brands</td><td>575</td><td>575</td><td>17</td><td>17</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3703.24</td></tr><tr><td>Average day profit</td><td>3703.24</td></tr></tbody></table>
+<br><br><p>Day report of 12/29/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>33</td><td>33</td><td>0</td><td>0</td><td>Yes</td><td>0/1803</td><td>5</td></tr><tr><td>Leeson</td><td>6</td><td>6</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>23</td><td>23</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>128</td><td>128</td><td>4</td><td>4</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>92.04</td></tr><tr><td>Average day profit</td><td>92.04</td></tr></tbody></table>
+<br><br><p>Day report of 12/28/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>24</td><td>24</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>17</td><td>17</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>2</td><td>2</td><td>0</td><td>0</td><td>Yes</td><td>2/1283</td><td>4</td></tr><tr><td>Dodge</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>144</td><td>144</td><td>3</td><td>3</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>532.19</td></tr><tr><td>Average day profit</td><td>532.19</td></tr></tbody></table>
+<br><br><p>Day report of 12/27/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>108</td><td>108</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>46</td><td>46</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>93</td><td>93</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>430</td><td>430</td><td>10</td><td>10</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1381.45</td></tr><tr><td>Average day profit</td><td>1381.45</td></tr></tbody></table>
+<br><br><p>Day report of 12/27/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>108</td><td>108</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>46</td><td>46</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>93</td><td>93</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>430</td><td>430</td><td>10</td><td>10</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1381.45</td></tr><tr><td>Average day profit</td><td>1381.45</td></tr></tbody></table>
+<br><br><p>Day report of 12/26/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>108</td><td>108</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>46</td><td>46</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>93</td><td>93</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>430</td><td>430</td><td>10</td><td>10</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1381.45</td></tr><tr><td>Average day profit</td><td>1381.45</td></tr></tbody></table>
+<br><br><p>Day report of 12/26/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>80</td><td>80</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>29</td><td>29</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>26</td><td>26</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>109</td><td>109</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>446</td><td>446</td><td>6</td><td>6</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1148.43</td></tr><tr><td>Average day profit</td><td>1148.43</td></tr></tbody></table>
+<br><br><p>Day report of 12/26/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>80</td><td>80</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>29</td><td>29</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>26</td><td>26</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>109</td><td>109</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>446</td><td>446</td><td>6</td><td>6</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1148.43</td></tr><tr><td>Average day profit</td><td>1148.43</td></tr></tbody></table>
+<br><br><p>Day report of 12/26/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>80</td><td>80</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>29</td><td>29</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>26</td><td>26</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>109</td><td>109</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>446</td><td>446</td><td>6</td><td>6</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>1148.43</td></tr><tr><td>Average day profit</td><td>1148.43</td></tr></tbody></table>
+<br><br><p>Day report of 12/25/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>43</td><td>43</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>10</td><td>10</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>2</td><td>2</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>118</td><td>118</td><td>1</td><td>1</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>7.78</td></tr><tr><td>Average day profit</td><td>7.78</td></tr></tbody></table>
+<br><br><p>Day report of 12/25/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>43</td><td>43</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>10</td><td>10</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>2</td><td>2</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>118</td><td>118</td><td>1</td><td>1</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>7.78</td></tr><tr><td>Average day profit</td><td>7.78</td></tr></tbody></table>
+<br><br><p>Day report of 12/24/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>36</td><td>36</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>12</td><td>12</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>5</td><td>5</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>52</td><td>52</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>202</td><td>202</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>0.0</td></tr><tr><td>Average day profit</td><td>0.00</td></tr></tbody></table>
+<br><br><p>Day report of 12/23/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>115</td><td>115</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>66</td><td>66</td><td>1</td><td>1</td><td>Yes</td><td>0/1829</td><td>8</td></tr><tr><td>Redlion</td><td>10</td><td>10</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>141</td><td>141</td><td>1</td><td>1</td><td>Yes</td><td>125/5023</td><td>8</td></tr><tr><td>All brands</td><td>556</td><td>556</td><td>14</td><td>14</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3424.93</td></tr><tr><td>Average day profit</td><td>3424.93</td></tr></tbody></table>
+<br><br><p>Day report of 12/23/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>115</td><td>115</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>66</td><td>66</td><td>1</td><td>1</td><td>Yes</td><td>0/1829</td><td>8</td></tr><tr><td>Redlion</td><td>10</td><td>10</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>141</td><td>141</td><td>1</td><td>1</td><td>Yes</td><td>125/5023</td><td>8</td></tr><tr><td>All brands</td><td>556</td><td>556</td><td>14</td><td>14</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>3424.93</td></tr><tr><td>Average day profit</td><td>3424.93</td></tr></tbody></table>
+<br><br><p>Day report of 12/22/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>19</td><td>19</td><td>0</td><td>0</td><td>Yes</td><td>0/1824</td><td>5</td></tr><tr><td>Leeson</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>70.4</td></tr><tr><td>Average day profit</td><td>70.40</td></tr></tbody></table>
+<br><br><p>Day report of 12/22/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>19</td><td>19</td><td>0</td><td>0</td><td>Yes</td><td>0/1824</td><td>5</td></tr><tr><td>Leeson</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>70.4</td></tr><tr><td>Average day profit</td><td>70.40</td></tr></tbody></table>
+<br><br><p>Day report of 12/21/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+       </th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>19</td><td>19</td><td>0</td><td>0</td><td>Yes</td><td>0/1824</td><td>5</td></tr><tr><td>Leeson</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>4</td><td>4</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>70.4</td></tr><tr><td>Average day profit</td><td>70.40</td></tr></tbody></table>
+<br><br><p>Day report of 12/21/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>20</td><td>20</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>2/1424</td><td>4</td></tr><tr><td>Dodge</td><td>40</td><td>40</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>119</td><td>119</td><td>2</td><td>2</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>44.19</td></tr><tr><td>Average day profit</td><td>44.19</td></tr></tbody></table>
+<br><br><p>Day report of 12/20/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>121</td><td>121</td><td>4</td><td>4</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>57</td><td>57</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>11</td><td>11</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>112</td><td>112</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>531</td><td>531</td><td>18</td><td>18</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>5797.92</td></tr><tr><td>Average day profit</td><td>5797.92</td></tr></tbody></table>
+<br><br><p>Day report of 12/19/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>174</td><td>174</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>65</td><td>65</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>15</td><td>15</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>205</td><td>205</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>700</td><td>700</td><td>17</td><td>17</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>14019.81</td></tr><tr><td>Average day profit</td><td>14019.81</td></tr></tbody></table>
+<br><br><p>Day report of 12/19/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>174</td><td>174</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>65</td><td>65</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>15</td><td>15</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>205</td><td>205</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>700</td><td>700</td><td>17</td><td>17</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>14019.81</td></tr><tr><td>Average day profit</td><td>14019.81</td></tr></tbody></table>
+<br><br><p>Day report of 12/18/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>127</td><td>127</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Leeson</td><td>56</td><td>56</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>7</td><td>7</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>4</td></tr><tr><td>Dodge</td><td>148</td><td>148</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>642</td><td>642</td><td>26</td><td>26</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>8204.46</td></tr><tr><td>Average day profit</td><td>8204.46</td></tr></tbody></table>
+<br><br><p>Day report of 12/17/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>169</td><td>169</td><td>3</td><td>3</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>51</td><td>51</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>Redlion</td><td>10</td><td>10</td><td>1</td><td>1</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>172</td><td>172</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>8</td></tr><tr><td>All brands</td><td>676</td><td>676</td><td>19</td><td>19</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>9338.62</td></tr><tr><td>Average day profit</td><td>9338.62</td></tr></tbody></table>
+<br><br><p>Day report of 12/16/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>123</td><td>123</td><td>5</td><td>5</td><td>Yes</td><td>0/0</td><td>6</td></tr><tr><td>Leeson</td><td>66</td><td>66</td><td>5</td><td>5</td><td>Yes</td><td>0/1849</td><td>8</td></tr><tr><td>Redlion</td><td>10</td><td>10</td><td>2</td><td>2</td><td>Yes</td><td>0/0</td><td>5</td></tr><tr><td>Dodge</td><td>164</td><td>164</td><td>3</td><td>3</td><td>Yes</td><td>477/4257</td><td>8</td></tr><tr><td>All brands</td><td>613</td><td>613</td><td>30</td><td>30</td><td></td><td></td><td>7</td></tr><tr></tr><tr><td>Total profit</td><td>6292.32</td></tr><tr><td>Average day profit</td><td>6292.32</td></tr></tbody></table>
+<br><br><p>Day report of 12/15/2013.</p><br><br><table  border="1" cellpadding="5" style="border-collapse: collapse;">
+                    <thead>
+                    <tr>
+                    <th>Brand</th>
+                    <th>Total<br>visits</th>
+                    <th>Average<br>visits</th>
+                    <th>Total<br>sales</th>
+                    <th>Average<br>sales</th>
+                    <th>Prices<br> changed</th>
+                    <th># Prices<br>changed</th>
+                    <th>Average<br>rank</th>
+                    </tr>
+                    </thead>
+                    <tbody><tr><td>Baldor</td><td>5</td><td>5</td><td>0</td><td>0</td><td>Yes</td><td>0/1829</td><td>0</td></tr><tr><td>Leeson</td><td>1</td><td>1</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Redlion</td><td>0</td><td>0</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>Dodge</td><td>7</td><td>7</td><td>0</td><td>0</td><td>Yes</td><td>0/0</td><td>0</td></tr><tr><td>All brands</td><td>31</td><td>31</td><td>0</td><td>0</td><td></td><td></td><td>0</td></tr><tr></tr><tr><td>Total profit</td><td>27.05</td></tr><tr><td>Average day profit</td><td>27.05</td></tr></tbody></table>

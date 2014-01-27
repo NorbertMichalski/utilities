@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Check Supply Status</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}supply/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}supply/tablesorter/themes/blue/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="{{ STATIC_URL }}supply/tablesorter/jquery.tablesorter.js"></script>
+	<script src="{{ STATIC_URL }}supply/geoPosition.js"></script>
+	<script src="{{ STATIC_URL }}supply/geoPositionSimulator.js"></script>
+
+<script>
+function message(message){
+	document.getElementById('message').innerHTML = message;
+}
+
+function clearBox(){
+	document.getElementById("orderNumbers").innerHTML = '';
+            document.getElementById('orderNumbers').value = '';
+}
+
+function focusInBox(){
+	var box = document.getElementById("orderNumbers");
+	if (box.value=="Please insert here the manufactor's part numbers (max 8), separated by comma or by new line.") {
+		box.value = '';
+	}
+}
+
+function focusOutBox(){
+	var box = document.getElementById("orderNumbers");
+	if (box.value=="") {
+		box.value = "Please insert here the manufactor's part numbers (max 8), separated by comma or by new line.";
+	}
+	
+}
+
+function showOptions () {
+  var obj = document.getElementById("supplier");
+  obj.size = 16;
+}
+
+function hideOptions () {
+  var obj = document.getElementById("supplier");
+  obj.size = 1;
+}
+
+function showTable() {
+	var get_id = document.getElementById('selectResult');
+	var result = get_id.options[get_id.selectedIndex].value;
+	var allTables = document.getElementsByClassName('tablesorter');
+	//console.log(allTables);
+	for (var i=0; i<allTables.length; i++){
+		//console.log(allTables[i]);
+		allTables[i].className = 'tablesorter hide';	
+	}
+	document.getElementById(result).className = 'tablesorter';
+	addMarkers1();
+}
+
+function loadXMLDoc(self, elem, zipcode1, zipcode2, weight) {
+	self.style.display = 'none';
+	document.getElementById(elem).innerHTML='Working...<br>Please wait.';
+		
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+	    document.getElementById(elem).innerHTML=xmlhttp.responseText;
+	    }
+	  }
+	xmlhttp.open("GET","../shipping/estimate/?zipcode1=" + zipcode1 + "&zipcode2=" + zipcode2 + "&weight=" + weight,true);
+	xmlhttp.send();
+}
+	
+function getCurrentPart(){
+	var get_id = document.getElementById('selectResult');
+	var result = get_id.selectedIndex;
+	return result;
+	
+}
+
+function isValidZIP(zip) {
+	    if (zip=='') return true;
+	    var regex = /^\d{5}(-\d{4})?(?!-)$/;
+	    if (zip.match(regex)) return true;
+	    return false;
+		}
+
+function validateZip() {
+	var zipcode = document.forms["partsForm"]["zipcode"].value.trim();
+	if (!isValidZIP(zipcode)){
+			alert('Invalid ZIP code. Please enter a valid one.');
+			message('Invalid data. Please try again.')
+			return false;
+		}
+	else {
+                
+		if (zipcode=='') return;
+		var geocoder = new google.maps.Geocoder();
+		geocoder.geocode({ 'address': zipcode + ', United States' }, function (results, status) {
+	    if (status == google.maps.GeocoderStatus.OK) {
+	        //map.setCenter(results[0].geometry.location);
+	        yourLocation = results[0].geometry.location;
+	        console.log(yourLocation);
+	        console.log(yourLocation.toString());
+    		document.forms["partsForm"]["yourlocation"].value = yourLocation.toString();
+	        showYourLocation(yourLocation);
+		
+	    }
+	    else {
+	        alert("Geocode was not successful for the following reason: " + status);
+    }
+	});
+		
+	}
+	
+}
+
+
+function validateForm(){
+	var data=document.forms["partsForm"]["codes"].value;
+	if (data=='Please insert here the manufactor\'s part numbers (max 8), separated by comma or by new line.') {
+		alert('You didn\'t introduced any data.');
+		message('You didn\'t introduced any data.')
+		return false;
+		}
+			
+	}
+
+	
+function showYourLocation(latlng) {
+	var marker = new google.maps.Marker({
+	            map: map,
+	            position: latlng,
+	            icon: "http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png"
+	        });
+}	
+
+
+function geoSuccess (p) {
+	 	var latLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+	 	showYourLocation(latLng);
+	 	var geocoder = new google.maps.Geocoder();
+	 	geocoder.geocode({'latLng': latLng}, function(results, status) {
+		  if (status == google.maps.GeocoderStatus.OK) {
+		    if (results[1]) {
+		      address_array = results[1].address_components;
+		      len = address_array.length;
+		      console.log(address_array);
+		      for (i=0;i<len;i++) {
+		      	console.log(address_array[i]);
+		      	if (address_array[i]["types"] == 'postal_code') {
+		      				zip_code = address_array[i]["short_name"];
+		      				document.forms["partsForm"]["zipcode"].value = zip_code;
+		      				break;
+		      		}
+		      }
+		      
+		    } else {
+		      //alert("No results found");
+		    }
+		  } else {
+		    //alert("Geocoder failed due to: " + status);
+		  }
+		});
+  
+}
+
+function geoError() {
+  //alert("Could not find you!");
+}
+
+var locations=new Array({ coords: {
+                                        latitude:   30.2847664,
+                                        longitude: -97.7264275
+                                        } 
+                                    });
+
+//geoPositionSimulator.init(locations);
+if (geoPosition.init()) {
+  geoPosition.getCurrentPosition(geoSuccess, geoError);
+}
+		
+</script>
+<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 80%; width: 100%; margin: 12% auto 2% 20%; }
+</style>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqptXBz-aofqLeOq1jACVz2FQeb5_MuxE&sensor=true">
+</script>
+<script type="text/javascript">
+var map;
+var markers = [];
+
+function initialize() {
+  var mapDiv = document.getElementById('map-canvas');
+  map = new google.maps.Map(mapDiv, {
+    center: new google.maps.LatLng(39.0997,-94.5783),
+    zoom: 3,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+	{% if your_location %}
+	 	var yourLocation = '{{ your_location|safe }}';
+	 	var lat = yourLocation.split(',')[0].trim()
+	 	var lng = yourLocation.split(',')[1].trim()
+	 	var latLng = new google.maps.LatLng(lat, lng);
+	 	console.log(yourLocation);
+	 	showYourLocation(latLng);
+	{% else %}
+	 	var yourLocation = '';
+	{% endif %}
+  
+  google.maps.event.addListenerOnce(map, 'tilesloaded', addMarkers1);
+
+}
+
+function getLocations() {
+     var partOrder = getCurrentPart();
+     //console.log(partOrder);
+     {% if locations %}
+     	locations = {{locations|safe}};
+     {% else %}
+     	locations = '';
+     {% endif %}
+     //console.log(locations[partOrder]);
+     return locations[partOrder];
+
+}
+
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+function addMarkers1() {
+
+    {% if coordinates %}
+     	var coordinates = {{ coordinates|safe }};
+     {% else %}
+     	var coordinates = '';
+     {% endif %}
+    
+    
+    if (markers !==[]) {
+	    setAllMap(null);
+	}
+	locations = JSON.parse(getLocations());
+	console.log(locations);
+    if (locations) {
+    
+    }
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i, latLng;
+
+    for (var key in locations) {
+        //console.log(key);
+        var latLng = new google.maps.LatLng(coordinates[key][0],coordinates[key][1]);
+        marker = new google.maps.Marker({
+        position: latLng,
+        map: map
+      });
+      markers.push(marker);
+      var available_motors = locations[key];
+      //console.log(key, available_motors);
+      google.maps.event.addListener(marker, 'click', (function(marker, key) {
+      return function() {
+      infowindow.setContent('<p>' + key + '</p><p><span>' + locations[key] + '</span> motors available</p>');
+          infowindow.open(map, marker);
+        }
+      })(marker, key));
+    }
+
+}
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+$(document).ready(function() 
+    { 
+        //$("#myTable").tablesorter();
+        $(".tablesorter").each(function () {$(this).tablesorter({sortList: [[4,0], [1,0]]});
+          
+        })
+        validateZip();          
+    } 
+);
+</script>
+</head>
+<body>
+{% if info %}
+	<h4 id="message" class="instructions">{{info}}</h4>
+{% else %}
+	<h4 id="message" class="instructions">Please input data.</h4>
+{% endif%}
+<div class="container">
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'supply:index' %}" method="post" class="inputForm" name="partsForm" onsubmit="return validateForm()">
+	{% csrf_token %}
+	{{ form.errors }}
+	{{ form.non_field_errors }}
+	<h4 class="subtitle">Check Supply</h4>
+	<div class="controls">
+	<input type="button" class="button" value="Clear" title="Clear the contents of the input box." onclick="clearBox()"/>
+	</div>
+	<textarea class="textArea" rows="25" cols="20" name="codes" id="orderNumbers" title="Please paste here the part numbers you want to check." onfocus="focusInBox()" onblur="focusOutBox()" >Please insert here the manufactor's part numbers (max 8), separated by comma or by new line.</textarea>
+	<div class="controls">
+		<div class="button_container">
+		<label class="label_input">Your ZIP:</label>
+		<label class="label_input">Manufactor:</label>
+		</div>
+		<div class="button_container" onmouseover="showOptions()" onmouseout="hideOptions()">
+			{% if zip_code %}
+				<input id="zipcode" class="inputclass" name="zipcode" onblur="validateZip()" value="{{zip_code|safe}}" />
+			{% else %}
+				<input id="zipcode" class="inputclass" name="zipcode" onblur="validateZip()" value="" />
+			{% endif %}
+			
+                        {% if your_location %}
+			<input id="yourlocation" class="inputclass" name="yourlocation"  style="display:none;" value="{{your_location|safe}}" />
+                        {% else %}
+			<input id="yourlocation" class="inputclass" name="yourlocation"  style="display:none;" value="" />
+                        {% endif %}
+		
+			<select id="supplier" name="company" class="inputclass" onmouseout="this.size=1;" onmouseover="this.size=16;">
+				<option value="baldor" selected="selected">Baldor</option>
+				<option value="bando">Bando</option>
+				<option value="boston">Boston Gear</option>
+				<option value="dodge">Dodge</option>
+				<option value="leeson">Electra Gear</option>
+				<option value="leeson">Grove Gear</option>
+				<option value="gates">Gates</option>
+				<option value="leeson">Leeson</option>
+				<option value="leeson">Lincoln</option>
+				<option value="martin">Martin Spr</option>
+				<option value="maska">Maska</option>
+				<option value="mrc">MRC Bearing</option>
+				<option value="nachi">Nachi</option>
+				<option value="nexen">Nexen</option>
+				<option value="redlion">RedLion</option>
+				<option value="weg">WEG</option>
+				
+			</select>
+		</div>
+	
+    <div class="searchButton_container">
+	<input type="submit" class="button" value="Search" title="Search the selected supplier." onclick="message('Working... Please wait a minute.')"/>
+	</div>
+	</div>
+<div class="tableContainer">
+	{% load supply_filters %}
+	{% if locations %}
+	<label class="label_select">Select your motor:</label>
+	<select id="selectResult" onchange="showTable()">
+	{% for key, value in locations %}
+        <option value={{key}}>{{key}}</option>
+	{% endfor %}
+	</select>
+	{% endif %}
+	{% for key, value in locations %}
+		{% with weight=weights|lookup:key %}    
+		{%if forloop.first %}
+			<table class="tablesorter" id={{key}}>
+		{% else %}
+			<table class="tablesorter hide" id={{key}}>
+		{% endif %}
+	    <thead>
+	    <tr>
+	    <th>Warehouse Location</th>
+	    <th>Available</th>
+	    <th>Cutoff Time</th>
+	    <th>Local Time</th>
+	    {% if distances == "{}" %}
+	    {% else %}
+	    <th>Distance</th>
+	    {% endif %}
+	    {% if warehouse_zip == "{}" %}
+	    {% else %}
+	    <th>Shipping Estimates</th>
+	    {% endif %}
+	    </tr>
+	    </thead>
+	    <tbody>
+	    {% with x=forloop.counter|stringformat:"s" %}
+		{% with locations1=value|to_json %}     
+		{% for key, value in locations1 %}
+	        <tr>
+		        {% with city_state=city_states|lookup:key %}    
+		        	<td>{{ city_state }}</td>
+			    {% endwith %}
+		        <td>{{value}}</td>
+		        <td>03:00 PM</td>
+		        	{% with time=local_time|lookup:key %}    
+				        	<td>{{ time }}</td>
+			        {% endwith %}
+					{% if distances %}
+					{% with distance=distances|lookup:key %}
+				        	<td>{{ distance }}</td>
+					{% endwith %}
+					{% endif %}
+					{% if warehouse_zip %}
+					{% with estimate=warehouse_zip|lookup:key%}
+			        	{% with y=forloop.counter|stringformat:"s" %}
+					    {% with template="estimate"|add:x|add:y %}
+					        <td class="last"><div id="{{template}}"></div><input type="button" value="Estimate" onclick="loadXMLDoc(this, '{{template}}', {{zip_code|safe}}, {{estimate|safe}}, {{weight}} )"/></td>
+					    {% endwith %}
+					    {% endwith %}
+					{% endwith %}
+					{% endif %}
+		    </tr>
+		{% endfor %}
+		{% endwith %}
+		{% endwith %}
+	    </tbody>
+		</table>
+	{% endwith %}
+	{% endfor %}
+</div>
+</form>
+<div class="inputForm">
+<div id="map-canvas"></div>
+</div>
+</div>
+</body>
+</html>

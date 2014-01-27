@@ -1,0 +1,23 @@
+<head>
+	<title>Check Shipping Status</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}tracking/style.css">
+	
+</head>
+
+
+<h3 class="instructions">Please paste here the order codes you want to check:</h3>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<form action="{% url 'tracking:search' %}" method="post" class="container">
+{% csrf_token %}
+<h4>Order Numbers</h4>
+<input type="text" autofocus="autofocus" class="textBox" name="codes" id="orderNumbers" value="" autocomplete='off'>
+
+<input type="radio" class="radio" value="BaldorVip" name="company" id="BaldorVip" checked="checked"/><label>BaldorVip</label>
+<input type="radio" class="radio" value="BostonGear" name="company" id="BostonGear"/><label>BostonGear</label>
+
+<input type="submit" class="button" value="Search" />
+</form>
+
+

@@ -1,0 +1,24 @@
+<head>
+<title>Tracking Numbers</title>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}tracking/style.css">
+</head>
+
+<body>
+<div class="container">	
+<h3 class="instructions">These are the tracking numbers from {{ company }} </h3>
+<textarea class="textArea" rows="25" cols="20" readonly="readonly">{{ codes }}</textarea>
+<textarea class="textArea" rows="25" cols="20" readonly="readonly">{{ tracking }}</textarea>
+
+{% if latest_numbers %}
+    <ul>
+    {% for shipping in latest_numbers %}
+        <li><a href="/tracking/{{ shipping.orderNumber }}/">{{ shipping.trackNumber }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No recent order numbers were introduced.</p>
+{% endif %}
+
+</div>
+
+</body>

@@ -1,0 +1,100 @@
+<head>
+	<title>Check Shipping Status</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}tracking/style.css">
+	
+</head>
+<script>
+	function message(message){
+		document.getElementById('message').innerHTML = message;
+	}
+	
+	function clearBox(){
+		document.getElementById("orderNumbers").innerHTML = '';
+                document.getElementById('orderNumbers').value = '';
+	}
+	
+		
+</script>
+
+
+<div class="container">
+<h4 id="message" class="instructions">{{info}}</h4>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'tracking:index' %}" method="post" class="inputForm">
+	{% csrf_token %}
+	<h4 class="subtitle">Order Numbers</h4>
+	<div class="controls">
+	<input type="button" class="button" value="Clear" title="Clear the contents of the input box." onclick="clearBox()"/>
+	</div>
+	<textarea class="textArea" rows="25" cols="20" name="codes" id="orderNumbers" title="Please paste here the order codes you want to check.">{{ codes }}</textarea>
+	<div class="controls">
+	<div class="button_container">
+	<input type="radio" class="radio" value="BaldorVip" name="company" id="BaldorVip" checked="checked"/>
+	<label class="label_radio">Baldor</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="BostonGear" name="company" id="BostonGear"/>
+	<label class="label_radio">BostonGear</label>
+	</div>
+	<div class="button_container last">
+	<input type="radio" class="radio" value="BaldorVip" name="company" id="Maska"/>
+	<label class="label_radio">Maska</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="leeson" name="company" id="Leeson"/>
+	<label class="label_radio">Leeson</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="leeson" name="company" id="Electra"/>
+	<label class="label_radio">ElectraGear</label>
+	</div>
+	<div class="button_container last">
+	<input type="radio" class="radio" value="mrc" name="company" id="Mrc"/>
+	<label class="label_radio">MRC</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="leeson" name="company" id="Lincoln"/>
+	<label class="label_radio">Lincoln</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="leeson" name="company" id="Grove"/>
+	<label class="label_radio">GroveGear</label>
+	</div>
+	<div class="button_container last">
+	<input type="radio" class="radio" value="dodge" name="company" id="Dodge"/>
+	<label class="label_radio">Dodge</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="weg" name="company" id="Weg"/>
+	<label class="label_radio">WEG</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="MartinSp" name="company" id="MartinSprocket"/>
+	<label class="label_radio">MartinSpr</label>
+	</div>
+	<div class="button_container last">
+	<input type="radio" class="radio" value="gates" name="company" id="Gates"/>
+	<label class="label_radio">Gates</label>
+	</div>
+	<div class="button_container">
+	<input type="radio" class="radio" value="redlion" name="company" id="Redlion"/>
+	<label class="label_radio">Redlion</label>
+	</div>
+	
+	
+	
+	
+	
+	
+        </div>
+        <div class="searchButton_container">
+	<input type="submit" class="button" value="Search" title="Search the selected supplier." onclick="message('Working... Please wait a minute.')"/>
+	</div>
+</form>
+
+<div class="inputForm">
+	<h4 class="subtitle">Tracking Numbers</h4>
+	<textarea class="textArea" id="trackingNumbers" rows="25" cols="20" readonly="readonly" title="The results will appear shortly here, exactly in the same order.">{{ tracking }}</textarea>
+</div>
+</div>
