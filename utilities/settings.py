@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'supply',
     'tracking',
     'shipping',
+    'freightsolution',
     'resale_cert',
     'prices',
     'prices.tools',
